@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #9929EA;
+    --secondary-color: #CC66DA;
+    --tertiary-color: #FAEB92;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --font-family: 'Inter';
+}
+body {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: var(--tertiary-color);
+}
+h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.primary {
+    align-items: center;
+    text-align: left;
+    margin: 5%;
+}
+.second {
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+.container {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    max-width: 400px;
+}
+.container__image {
+    margin: 1em 1em;
+    max-width: 400px;
+    border-radius: 1rem;
+}
+.container__button__primary {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 4px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+.container__button__primary:hover {
+    background-color: var(--primary-color);
+    border: #56068f 4px solid;
+    color: var(--white-color);
+}
+.container__button__secondary {
+    text-decoration: none;
+    text-align: center;
+    border: 4px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+}
+.container__button__secondary:hover {
+    background-color: var(--white-color);
+}
+.container__caption {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    max-width: 400px;
+}
+.container__description {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap : 1rem;
+    max-width: 500px;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.test {
+    background-image: url("assets/cat10.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main {
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        display: block;
+        height: auto;
+        text-align: left;
+    }
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .container__title {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        max-width: 600px;
+    }
+    .primary, .second {
+    align-items: center;
+    text-align: left;
+    margin: 5%;
+    }
+
+    .container__image {
+    margin: 1em 0;
+    max-width: 600px;
+    border-radius: 1rem;
+}
+    .order {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: right;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        height: auto;
+    }
+    h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .container__title {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .container__image {
+        max-width: 100%;
+    }
+    .container__button__primary,
+    .container__button__secondary {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .order {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        justify-content: left;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .container__title {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .container__image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .container__button__primary,
+    .container__button__secondary {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+        
